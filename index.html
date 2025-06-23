@@ -70,12 +70,13 @@
       <div class="contact__content">
         <h3 class="contact__content__title text-gradient">Contáctame</h3>
 
-        <form class="contact__form">
+        <form id="contactForm" class="contact__form">
           <input type="text" name="name" placeholder="Nombre" required>
           <input type="email" name="email" placeholder="Correo" required>
-          <input type="number" name="phone" placeholder="Numero de Telefono" min="0" required>
+          <input type="number" name="phone" placeholder="Numero de Celular" min="0" required>
           <textarea name="message" placeholder="Mensaje" rows="3" required></textarea>
-          <button type="submit">Enviar Mensaje</button>
+          <button id="sendButton" type="submit" class="btn-primary">Enviar Mensaje</button>
+          <span id="formMessage" role="alert"></span>
         </form>
       </div>
     </section>
@@ -158,6 +159,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

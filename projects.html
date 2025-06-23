@@ -19,8 +19,12 @@
         <h3 class="projects__content__title text-gradient">
           Mis Proyectos
         </h3>
-        <div class="projects__content__grid">
-          <figure class="project__card">
+        <!-- Boton para agrgar proyecto -->
+        <button type="button" id="addProjectBtn" class="btn btn-primary">Agregar Proyecto</button>
+        <span id="projectMessage" style="color: #34d399; font-weight: 700; margin-bottom: 1rem; display: none;">Proyecto
+          Agregado!!</span>
+        <div id="projectsContent" class="projects__content__grid">
+          <!-- <figure class="project__card">
             <img src="img/project_1.webp" alt="Proyecto 1" class="project__card__image--size">
             <figcaption>
               <h4 class="project__card__title">Proyecto 1</h4>
@@ -45,7 +49,7 @@
               <p class="project__card__desc">Descripcion creado con figcaption</p>
               <a href="#" class="project__card__link">Ver proyecto</a>
             </figcaption>
-          </figure>
+          </figure> -->
         </div>
         <a href="#projects-map" class="btn-link">Ver Mapa Interactivo</a>
       </div>
@@ -141,6 +145,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
